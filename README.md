@@ -27,6 +27,12 @@ Army Composition Mod for Victoria 2
 - How does mobilization look in a format like this?
 - Possibly avoid normal mobilization in favor of heavily increased reinforcement rates of existing armies
 
+## Combat
+- This is the trickiest part to solve, as the combat expects different unit types, i.e. infantry, cavalry, and support, and treats them differently.
+- Initial solution will be to treat each army as "infantry" and attempt to modify its stats appropriately based on what they would likely be if cavalry and support were used properly
+- Still remains the issue that artillery equipment will take more damage than usual since it won't actually be on the backline
+- Other issue is that combat width will never really come into play at all, since each army will only take one spot in the width. Could change this to lower width down to one or two armies.
+
 ---
 
 # Armies
@@ -36,11 +42,6 @@ Heavily based on this post: https://www.reddit.com/r/paradoxplaza/comments/3rd47
 - 4 Infantry
 - 1 Hussar
 - 5 Artillery
-
-## Army 2: 60k Artillery-Backed Infantry
-- 8 Infantry
-- 2 Hussar
-- 10 Artillery
 
 ---
 

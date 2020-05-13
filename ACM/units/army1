@@ -1,0 +1,44 @@
+army1 = {
+	# 4 Infantry, 1 Hussar, 5 Artillery
+
+	icon = 21 #NEW icon
+
+	type = land
+	sprite = Infantry #Infantry sprite
+	active = no #Not sure what this does
+	unit_type = infantry
+	floating_flag = no #Not sure what this does
+
+	#Core Abilities
+	priority = 10 #Not sure what this does, but may have to set it to 9999 to force AI behavior to use it.
+	max_strength = 30 #3 * 10 = 30, this is likely the number of soldier pops used
+	default_organization = 300 #30 * 10, assuming organization is additive and not averaged
+	maximum_speed = 4.00
+	weighted_value = 2.0 #Not sure what this is, but could have to do with AI behavior
+
+	#Building Costs
+	build_time = 120 #Lowered to the build time of the longest time to build unit
+	build_cost = {
+		small_arms = 50
+		canned_food = 100
+		luxury_clothes = 5
+		liquor = 50
+		wine = 50 
+	}
+
+	supply_consumption = 1.0
+	supply_cost = {
+		small_arms = 0.075
+		ammunition = 0.375
+		canned_food = 0.66
+		artillery = 0.5
+	}
+
+	#Land Abilities
+	# Recon set to 1, attack and defense calculated as sums but with artillery values doubled, support set to 0, maneuver set to 0
+	reconaissance = 1
+	attack = 34
+	defence = 49
+	support = 0.0
+	maneuver = 1
+}
