@@ -1,5 +1,4 @@
-*
-!.gitignore
-!ACM/**
-!ACM.mod
+/*
 !README.md
+!ACM.mod
+!ACM/
