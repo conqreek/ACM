@@ -1,3 +1,3 @@
-name = "Troop Templates Mod"
-path = "mod/TTM"
-user_dir = "TTM"
+name = "Army Composition Mod"
+path = "mod/ACM"
+user_dir = "ACM"
